@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Curation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+</head>
+
+<body>
+
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-sm-4">
+
+        <ul>
+
+        <h3>
+            Phil Welsh's Data Curation Exercise
+        </h3>
+
+        <p>
+            I mostly chose datasets from the United States Geological Survey.
+            Aside from being authoritative, trusted datasets, they are also generally
+            free and without access constraints. I believe the five datasets below
+            would be useful for geologists using Felt.
+
+        </br>
+        </br>
+
+            Please click the layer names to visit their website
+        </p>
+
+            <li><h5><a href="https://mrdata.usgs.gov/ngdb/rock/" target="_blank" style="text-decoration: none; color: black">National Geochemical Database: Rock ➡️</a></h5></li>
+                <p>
+                    I chose to style this layer on the map. After running into
+                    various roadblocks with Mapbox's file size limitations, I ended
+                    up using Carto due to their increased file size limits, easy
+                    styling, and built-in popups in iframes.
+                </br>
+
+                </br>
+                    This dataset contains over 400K points containing links to geochemical
+                    analyses of rock samples collected by the USGS. I believe this layer should
+                    be a part of this collection because geology generally deals with the earth's
+                    physical structure, and the rocks of which it is composed.
+
+                </br>
+                </br>
+
+                    Also, the dataset covers the whole world, so this collection would not be limited to American geologists.
+
+                </p>
+
+            <li><h5><a href="https://mrdata.usgs.gov/major-deposits/" target="_blank" style="text-decoration: none; color: black">Major Mineral Deposits of the World</a></h5></li>
+
+            <p>
+                This USGS dataset portrays the locations of known deposits of major
+                mineral commodities. Similar to the layer above, geologists
+                study minerals for research, classification, and extraction.
+                Ideally this dataset would help inform their decisions and research.
+            </p>
+
+            <li><h5><a href="https://www.usgs.gov/programs/earthquake-hazards/faults" target="_blank" style="text-decoration: none; color: black">Quaternary Fault and Fold Database of the United States</a></h5></li>
+            <p>
+                Depending on a geologist's area of research, they might require a dataset
+                portraying fault lines. This dataset portrays faults and folds in the United
+                States. The attribute information contains many fields including the name, age,
+                slip rate, and a link to more information on the USGS website.
+            </p>
+
+            <li><h5><a href="https://mrdata.usgs.gov/ngdb/soil/" target="_blank" style="text-decoration: none; color: black">National Geochemical Database: Soil</a></h5></li>
+
+            <p>
+                Along with rocks, tectonic plates, and water bodies, geologists are interested
+                in soil. This USGS dataset shows detailed information about different soils
+                and land cover in the United States.
+            </p>
+
+            <li><h5><a href="https://mrdata.usgs.gov/nure/water/" target="_blank" style="text-decoration: none; color: black">Geochemistry of water samples in the US</a></h5></li>
+
+            <p>
+                This USGS dataset contains over 335K data points containing information regarding
+                water samples' pH, sediment, color, and surrounding vegetation. I believe geologists
+                would find this data useful.
+            </p>
+
+        </ul>
+
+        </div>
+        <div class="col-sm-8">
+            <iframe width="100%" height="800px" src="https://gcp-us-east1.app.carto.com/map/692a6d38-8d75-445f-a61c-85548938994d"></iframe>
+        </div>
+    </div>
+
+</body>
+
+</html>
